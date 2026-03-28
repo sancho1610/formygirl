@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игровые фото</title>
+  <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+  <section class="hero">
+    <h1>Наши игровые моменты</h1>
+    <p>Память о веселых играх вместе</p>
+    <a href="../index.html">Назад на главную</a>
+  </section>
+
+  <section class="gallery">
+    <div class="photos">
+      <img src="../img/love.jpg" class="photo" alt="Игровое фото 1">
+      <img src="../img/mylove.jpg" class="photo" alt="Игровое фото 2">
+      <img src="../img/prison.jpg" class="photo" alt="Игровое фото 3">
+      <img src="../img/roblox.jpg" class="photo" alt="Игровое фото 4">
+      <img src="../img/dog.jpg" class="photo" alt="Игровое фото 4">
+      <img src="../img/heart.png" class="photo" alt="Игровое фото 4">
+      <img src="../img/ilove.png" class="photo" alt="Игровое фото 4">
+      <img src="../img/hopon.jpg" class="photo" alt="Игровое фото 4">
+      <img src="../img/lunka.jpg" class="photo" alt="Игровое фото 4">
+      <img src="../img/minecraft.png" class="photo" alt="Игровое фото 4">
+      <img src="../img/theend.png" class="photo" alt="Игровое фото 4">
+      <img src="../img/women.jpg" class="photo" alt="Игровое фото 4">
+      <img src="../img/loveher.png" class="photo" alt="Игровое фото 4">
+      <img src="../img/loveofmylife.jpg" class="photo" alt="Игровое фото 4">
+      <img src="../img/gravity.jpg" class="photo" alt="Игровое фото 4">
+      <img src="../img/girl.png" class="photo" alt="Игровое фото 4">
+    </div>
+  </section>
+
+  <!-- modal for gallery images -->
+  <div id="modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <span class="modal-arrow modal-prev">&#10094;</span>
+    <span class="modal-arrow modal-next">&#10095;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <!-- background audio + control -->
+  <audio id="bgAudio" autoplay loop>
+    <source src="../audio/cas.m4a" type="audio/mpeg">
+  </audio>
+  <button id="audioBtn" class="audio-control">Пауза музыки</button>
+
+  <script src="../app.js"></script>
+</body>
+</html>

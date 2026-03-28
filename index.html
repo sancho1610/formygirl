@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <!-- decorative cursive font for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+
+<h1>С 8 Марта моя девочка</h1>
+<h2 id="greeting" class="subheading"></h2>
+
+<p>Я тебя очень люблю</p>
+
+<a href="#" id="surpriseBtn">НАЖМИ СЮДА ДОРОГАЯ</a>
+
+<div id="secretText" class="secret">Ты — моя нежность и вдохновение. Если ты это читаешь, значит, ты уже мой главный сюрприз 💖. Я очень сильно тебя люблю ты самый дорогой для меня человек и я хочу быть только с тобой рядом всегда ты моя любовь всей жизни</div>
+
+</section>
+
+
+
+
+<section class="countdown">
+  <h2>Сколько прошло дней с нашего знакомства</h2>
+  <div id="timer">
+    <span id="days">0</span> дн
+    <span id="hours">0</span> ч
+    <span id="minutes">0</span> мин
+    <span id="seconds">0</span> сек
+  </div>
+</section>
+
+<section class="love">
+  <h2>Почему я тебя люблю</h2>
+  <div id="reasonDisplay" class="reason-display">Нажми кнопку ниже</div>
+  <button id="nextReasonBtn" class="reason-btn">Следующая причина</button>
+</section>
+
+
+<section class="gallery">
+  <h2>Галерея</h2>
+  <div class="photos">
+    <img src="img/1.jpg" class="photo" alt="Фото 2">
+    <img src="img/2.jpg" class="photo" alt="Фото 1">
+    <img src="img/3.jpg" class="photo" alt="Фото 3">
+  </div>
+  <a href="./pages/games.html" class="gallery-link">Игровые фото</a>
+</section>
+
+<!-- modal for gallery -->
+<div id="modal" class="modal">
+  <span class="modal-close">&times;</span>
+  <span class="modal-arrow modal-prev">&#10094;</span>
+  <span class="modal-arrow modal-next">&#10095;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<section class="letter-section">
+
+<h2>Открой</h2>
+
+<div class="envelope" onclick="openLetter()"></div>
+
+<div class="letter" id="letter">
+
+<p>Ты не представляешь какое место занимаешь в моей жизни жаным. Я тебя очень сильно люблю
+    ты буквально самый лучший человек в моей жизни пожалуйста давай поженимся и будем жить вместе до конца наших дней. Я буду всегда рядом и всегда поддержу тебя потому что ты мой самый любимый человек на свете и я сделаю все для тебя и я тебя очень сильно люблю
+
+</p>
+
+</div>
+
+</section>
+
+<!-- background audio + control -->
+<audio id="bgAudio" autoplay loop>
+  <source src="audio/cas.m4a" type="audio/mpeg">
+</audio>
+<button id="audioBtn" class="audio-control">Пауза музыки</button>
+
+</body>
+<script src="app.js"></script>
+</html>
