@@ -274,6 +274,27 @@ box-shadow:0 5px 15px rgba(0,0,0,0.2);
 .reason-btn:hover { background:#ff2f73; }
 
 /* responsive adjustments */
+@media (max-width: 828px) {
+  section { padding: 36px 14px; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 24px; }
+  a { padding: 12px 20px; font-size: 17px; }
+  .gallery-link { width: auto; margin-top: 16px; }
+  .photos {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .photos .photo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .reason-display { font-size: 17px; padding: 18px; }
+  .audio-control { bottom: 14px; right: 14px; padding: 8px 14px; font-size: 15px; }
+  .modal-content { max-width: 95%; max-height: 85%; }
+}
+
 @media (max-width: 600px) {
   section { padding: 40px 12px; }
   h1 { font-size: 28px; }
